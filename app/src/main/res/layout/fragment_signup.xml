@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:textColor="@color/white"
+                android:text="@string/teacher"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:id="@+id/tv_title_sign_up"
+                android:textAppearance="?android:textAppearanceButton"
+                />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/selectphoto"
+                >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/add_photo"
+                    android:id="@+id/select_photo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:id="@+id/tx_layout_name_signup"
+                android:hint="@string/name"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tx_register_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/user"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:id="@+id/tx_layout_email_signup"
+                android:hint="@string/email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tx_register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:hint="@string/phoneteacher"
+                android:id="@+id/tx_layout_phone_signup">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tx_register_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phone"
+                    android:textColor="@color/white"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                style="@style/et_style"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    app:passwordToggleEnabled="true"
+                    android:hint="@string/password"
+                    android:id="@+id/tx_layout_password_signup"
+                    app:passwordToggleTint="@color/white"
+                    android:layout_below="@+id/tx_layout_phone"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword"
+                        android:id="@+id/tx_register_password"
+                        android:drawableLeft="@drawable/password"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:id="@+id/rb_male"
+                    android:textSize="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    android:layout_weight="1.5"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:id="@+id/rb_female"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/white"
+                    />
+
+            </RadioGroup>
+
+            <Button
+                android:text="@string/next"
+                android:id="@+id/btn_next"
+                style="@style/btn_style"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

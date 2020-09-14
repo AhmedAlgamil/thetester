@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_choose_correct_ans"
+        android:icon="@drawable/choose"
+        android:title="@string/title_choose" />
+
+    <item
+        android:id="@+id/navigation_yes_or_not_with_reson"
+        android:icon="@drawable/yes_or_not"
+        android:title="@string/title_yes_or_not" />
+
+    <item
+        android:id="@+id/navigation_why_question"
+        android:icon="@drawable/why"
+        android:title="@string/title_why" />
+
+    <item
+        android:id="@+id/navigation_complete"
+        android:icon="@drawable/complete"
+        android:title="@string/title_complete" />
+
+
+</menu>

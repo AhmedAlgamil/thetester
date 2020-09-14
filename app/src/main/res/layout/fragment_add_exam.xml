@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_30sdp"
+                android:text="@string/adding_exam"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/tx_exam_name"
+                    android:drawableLeft="@drawable/exam"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="@string/exam_name"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/tx_exam_time"
+                    android:inputType="time"
+                    android:drawableLeft="@drawable/time"
+                    android:hint="@string/exam_time"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/tx_exam_degree"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/degree"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:hint="@string/exam_degree"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:drawableLeft="@drawable/time"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:inputType="time"
+                    android:id="@+id/tx_exam_start_time"
+                    android:hint="@string/exam_start_time"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:textColorHint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:inputType="time"
+                    android:drawableLeft="@drawable/time"
+                    android:id="@+id/tx_exam_end_time"
+                    android:hint="@string/exam_end_time"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                style="@style/et_style"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                >
+
+                <Spinner
+                    android:id="@+id/sp_add_exam_years"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="@dimen/_10sdp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/year"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/et_style"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                >
+
+                <Spinner
+                    android:id="@+id/sp_add_exam_subjects"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="@dimen/_10sdp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:backgroundTint="@color/fab_background"
+                android:src="@drawable/ok"
+                android:tooltipText="@string/ok_add"
+                android:layout_gravity="end"
+                android:id="@+id/fab_ok_add_exam"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

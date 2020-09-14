@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <ListView
+        android:id="@+id/lv_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_520sdp">
+
+    </ListView>
+
+    <Button
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/btn_register"
+        android:text="@string/teacher_register"
+        android:layout_below="@+id/lv_subjects"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        />
+
+
+</RelativeLayout>

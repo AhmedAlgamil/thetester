@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.algamil.thetester.views.activities.QuestionActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        android:id="@+id/tabs"
+        app:tabTextColor="@color/white"
+        app:tabBackground="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorAccent"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_quetsion"
+        android:layout_below="@+id/tabs"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/next"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fab_next"
+        android:layout_toRightOf="@+id/fab_previous"
+        android:src="@drawable/right"
+        style="@style/fab_style" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/previous"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fab_previous"
+        android:src="@drawable/left"
+        style="@style/fab_style" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click me"
+        android:onClick="hello"
+        />
+
+</RelativeLayout>

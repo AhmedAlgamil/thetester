@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">the tester</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="phoneteacher">phone teacher</string>
+    <string name="phonestudent">phone student</string>
+    <string name="password">password</string>
+    <string name="teacher_register">Teacher register</string>
+    <string name="student_register">Student register</string>
+    <string name="forget_password">forget password?</string>
+    <string name="remember_me">remember</string>
+    <string name="login">login</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="title_exam">Exams</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="next">next</string>
+    <string name="exam_name">exam name</string>
+    <string name="exam_time">time</string>
+    <string name="adding_exam">add exam</string>
+    <string name="exam_degree">exam degree</string>
+    <string name="exam_start_time">Start Time</string>
+    <string name="exam_end_time">End Time</string>
+    <string name="ok_add">ok</string>
+    <string name="title_correction">Correction</string>
+
+    <string name="title_choose">choose correct</string>
+    <string name="title_yes_or_not">yes or not</string>
+    <string name="title_why">why</string>
+    <string name="title_complete">complete</string>
+    <string name="question_number">question number</string>
+    <string name="Question_name">question name</string>
+    <string name="wrong_text1">wrong answer1</string>
+    <string name="wrong_text2">wrong answer2</string>
+    <string name="wrong_text3">wrong answer3</string>
+    <string name="answer">correct answer</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="required">Required</string>
+    <string name="phone_valid">phone is not valid</string>
+    <string name="password_valid">password is not valid</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+</resources>

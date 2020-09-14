@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:id="@+id/question_layout_name"
+                android:hint="@string/Question_name"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/question_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/question"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style"
+                android:id="@+id/correct_layout_ans"
+                android:hint="@string/answer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ok"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/et_style"
+                    android:id="@+id/wrong_layout_ans_1"
+                    android:hint="@string/wrong_text1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/wrong_ans1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/wronganswer"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="@dimen/_15sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/et_style"
+                    android:id="@+id/wrong_layout_ans_2"
+                    android:hint="@string/wrong_text2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/wrong_ans2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/wronganswer"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="@dimen/_15sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/et_style"
+                    android:id="@+id/wrong_layout_ans_3"
+                    android:hint="@string/wrong_text3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/wrong_ans3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/wronganswer"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="@dimen/_15sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:text="@string/add_question"
+                android:id="@+id/btn_add_question"
+                style="@style/btn_style" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/copy"
+        android:layout_below="@+id/tabs"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab_copy"
+        android:src="@drawable/copy"
+        style="@style/fab_style" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/add_photo"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab_add_photo"
+        android:layout_below="@+id/tabs"
+        android:src="@drawable/add_photo"
+        style="@style/fab_style" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/delete"
+        android:layout_below="@+id/tabs"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab_delete"
+        android:src="@drawable/delete"
+        style="@style/fab_style" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_more_up"
+        style="@style/fab_style"
+        android:layout_below="@+id/tabs"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/more"
+        android:tooltipText="@string/more" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/paste"
+        style="@style/fab_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab_paste"
+        android:src="@drawable/paste"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tooltipText="@string/edit"
+        style="@style/fab_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toLeftOf="@+id/fab_ok"
+        android:id="@+id/fab_edit"
+        android:src="@drawable/edit"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_to_favourite"
+        style="@style/fab_style"
+        android:src="@drawable/like"
+        android:layout_below="@+id/tabs"
+        android:tooltipText="@string/save" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_choose_or_not"
+        style="@style/fab_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/choose"
+        android:tooltipText="@string/title_choose" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_more_down"
+        style="@style/fab_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/more"
+        android:tooltipText="@string/more" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_paste"
+        android:text="@string/paste"
+        android:id="@+id/tool_paste"
+        android:layout_alignParentBottom="true"
+        style="@style/fab_tool_tip" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_edit"
+        android:text="@string/edit"
+        android:id="@+id/tool_edit"
+        android:layout_alignParentBottom="true"
+        style="@style/fab_tool_tip" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_choose_or_not"
+        style="@style/fab_tool_tip"
+        android:textSize="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/choose_or_not"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/tool_choose_or_not"
+        />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_delete"
+        android:text="@string/delete"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/tool_delete"
+        style="@style/fab_tool_tip" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_copy"
+        android:text="@string/copy"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/tool_copy"
+        style="@style/fab_tool_tip" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/fab_copy"
+        android:text="@string/add_photo"
+        android:id="@+id/tool_add_photo"
+        style="@style/fab_tool_tip"
+        android:layout_below="@+id/tabs"
+        android:textSize="@dimen/_15sdp"
+        android:layout_margin="@dimen/_10sdp"/>
+
+
+
+</RelativeLayout>

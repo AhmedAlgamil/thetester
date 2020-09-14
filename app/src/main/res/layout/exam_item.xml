@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:id="@+id/select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_image_select_photo"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/selectphoto" />
+
+            <ImageView
+                android:id="@+id/add_tofavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/like" />
+
+
+            <ImageView
+                android:id="@+id/_image_view_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/delete" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_teacher_name"
+            style="@style/recycler_et"
+            android:textColor="@color/white"
+            android:layout_below="@+id/select_photo"
+            android:layout_centerHorizontal="true"
+            android:text="teacher name" />
+
+
+        <TextView
+            android:id="@+id/tv_exam_year"
+            android:text="year"
+            style="@style/tv_style" />
+
+
+        <TextView
+            android:id="@+id/tv_exam_time"
+            android:layout_alignParentEnd="true"
+            style="@style/tv_style"
+            android:layout_below="@+id/tv_teacher_name"
+            android:layout_marginTop="30dp"
+            android:text="time" />
+
+
+        <TextView
+            android:id="@+id/tv_exam_time_to_time"
+            style="@style/recycler_et"
+            android:layout_below="@+id/select_photo"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="188dp"
+            android:text="from_time_to_time"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_exam_final_degree"
+            style="@style/recycler_et"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="final_degree"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_exam_subject"
+            style="@style/recycler_et"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="subject"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

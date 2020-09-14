@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/question_number"
+        android:gravity="center"
+        android:text="@string/question_number"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/select_question_type"
+        android:layout_below="@+id/question_number"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/select_question_type"
+        android:id="@+id/recyler_frame"
+        >
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/et_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/question_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="@string/Question_name"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/et_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="@string/answer"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wrong_ans1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/wrong_text1"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/et_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/wrong_ans2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phone"
+                    android:hint="@string/wrong_text2"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/_15sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            wrong text1
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/et_style">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:id="@+id/wrong_ans3"
+                        android:inputType="textMultiLine"
+                        android:drawableLeft="@drawable/password"
+                        android:hint="@string/wrong_text3" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <Button-->
+<!--                android:text="@string/next"-->
+<!--                android:id="@+id/btn_add_question"-->
+<!--                style="@style/btn_style" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

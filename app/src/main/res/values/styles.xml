@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="et_style" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="errorEnabled">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="my_image_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:tint">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="btn_style" parent="TextAppearance.AppCompat.Widget.Button.Colored">
+        <item name="android:layout_width">@dimen/_200sdp</item>
+        <item name="android:layout_height">@dimen/_60sdp</item>
+        <item name="android:background">@drawable/btn_shape</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textColor">@drawable/mytextcolor</item>
+
+    </style>
+
+
+    <style name="btn_style_checked" parent="TextAppearance.AppCompat.Widget.Button.Colored">
+        <item name="android:layout_width">@dimen/_200sdp</item>
+        <item name="android:layout_height">@dimen/_60sdp</item>
+        <item name="android:background">@drawable/checked_button</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textColor">@drawable/mytextcolor</item>
+
+    </style>
+
+    <style name="recycler_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_25sdp</item>
+    </style>
+
+    <style name="recycler_new">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_below">@+id/tv_exam_year</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+    </style>
+
+    <style name="tv_style">
+        <item name="android:layout_width">@dimen/_100sdp</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:layout_below">@+id/tv_teacher_name</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:drawableTint" tools:targetApi="m">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="layout_style">
+        <item name="android:layout_width">@dimen/_270sdp</item>
+        <item name="android:layout_height">@dimen/_300sdp</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/white</item>
+    </style>
+
+</resources>
